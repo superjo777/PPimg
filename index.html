@@ -7,22 +7,62 @@
             crossorigin="anonymous"></script>
     <title>Insert title here</title>
     <style type="text/css">
-        img {
-
-        }
 
         table {
-            border: 1px #000 solid;
+            border-top: 1px solid #000;
+
             border-spacing: 0;
-            margin-bottom: 20px;
         }
 
-        th {
-            border: 1px #000 solid;
+        .row-th {
+            border-bottom: 1px #000 solid;
         }
 
-        td {
+        .row-td {
             border: 1px #000 solid;
+            border-top: none;
+            text-align: center;
+
+        }
+
+        #img-td {
+            border: 1px #000 solid;
+            border-top: none;
+        }
+
+        .col-th {
+            border: 1px solid #000;
+            border-bottom: none;
+            border-right: none;
+            border: 1px solid #000;
+            border-right: none;
+        }
+
+        .col-td {
+            border: 1px solid #000;
+            border-top: none;
+            border-right: none;
+            text-align: center;
+        }
+
+        .col-last {
+            border-right: 1px solid #000;
+        }
+
+        .title {
+            border-left: none;
+            border-right: none;
+            height: 40px;
+            font-weight: bold;
+            vertical-align: bottom;
+        }
+        .profile{
+            border: 1px #000 solid;
+            padding: 15px;
+        }
+        .text-title{
+            font-weight: bold;
+            font-size: 18px;
         }
 
         .img {
@@ -174,7 +214,9 @@
             <img id="img6" class="img"
                  src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryManager_screencapture-localhost-8080-shop_dev-Pages-Manager-Category-categoryManager-jsp-2018-12-06-15_26_31.jpg"
                  alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryManager_screencapture-localhost-8080-shop_dev-Pages-Manager-Category-categoryManager-jsp-2018-12-06-15_26_31.jpg">
-            <img id="code6" class="code" src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryManager_screencapture-localhost-8080-shop_dev-Pages-Manager-Category-categoryManager-jsp.jpg" alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryManager_screencapture-localhost-8080-shop_dev-Pages-Manager-Category-categoryManager-jsp.jpg">
+            <img id="code6" class="code"
+                 src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryManager_screencapture-localhost-8080-shop_dev-Pages-Manager-Category-categoryManager-jsp.jpg"
+                 alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryManager_screencapture-localhost-8080-shop_dev-Pages-Manager-Category-categoryManager-jsp.jpg">
             <img id="codeOnly6" class="codeOnly"
                  src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryManagercode.jpg"
                  alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryManagercode.jpg"><br>
@@ -186,7 +228,9 @@
             <img id="img7" class="img"
                  src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryInsert.jpg"
                  alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryInsert.jpg">
-            <img id="code7" class="code" src="" alt="">
+            <img id="code7" class="code"
+                 src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryInsertCode00.jpg"
+                 alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryInsertCode00.jpg">
             <img id="codeOnly7" class="codeOnly"
                  src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryInsertCode.jpg"
                  alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryInsertCode.jpg"><br>
@@ -198,168 +242,224 @@
             <img id="img8" class="img"
                  src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryUpdate_screencapture-localhost-8080-shop_dev-Pages-Manager-Category-categoryUpdate-jsp-2018-12-06-16_50_48.jpg"
                  alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryUpdate_screencapture-localhost-8080-shop_dev-Pages-Manager-Category-categoryUpdate-jsp-2018-12-06-16_50_48.jpg">
-            <img id="code8" class="code" src="" alt="">
-            <img id="codeOnly8" class="codeOnly" src="" alt=""><br>
+            <img id="code8" class="code"
+                 src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryUpdateSaveCode00.jpg"
+                 alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryUpdateSaveCode00.jpg">
+            <img id="codeOnly8" class="codeOnly"
+                 src="https://github.com/superjo777/PPimg/blob/master/categoryUpdateSaveCode.jpg?raw=true"
+                 alt="https://github.com/superjo777/PPimg/blob/master/categoryUpdateSaveCode.jpg?raw=true"><br>
 
             <button class="btn" onclick="add('9')">관리자 카테고리 삭제</button>
-            <button class="code-btn" style="margin-left: 10px;" onclick="codeshow('8')">코드보기</button>
-            <button class="code-only-btn" style="margin-left: 10px;" onclick="codeOnly('8')">코드만 보기</button>
+            <button class="code-btn" style="margin-left: 10px;" onclick="codeshow('9')">코드보기</button>
+            <button class="code-only-btn" style="margin-left: 10px;" onclick="codeOnly('9')">코드만 보기</button>
             <br>
             <img id="img9" class="img"
                  src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryManager_screencapture-localhost-8080-shop_dev-Pages-Manager-Category-categoryDel.jpg"
                  alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryManager_screencapture-localhost-8080-shop_dev-Pages-Manager-Category-categoryDel.jpg">
-            <img id="code9" class="code" src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryDel00.jpg" alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryDel00.jpg">
-            <img id="codeOnly9" class="codeOnly" src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryDelCode.jpg" alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryDelCode.jpg"><br>
+            <img id="code9" class="code"
+                 src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryDel00.jpg"
+                 alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryDel00.jpg">
+            <img id="codeOnly9" class="codeOnly"
+                 src="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryDelCode.jpg"
+                 alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryDelCode.jpg"><br>
 
         </div>
-
+        
         <h3>인적 사항</h3>
         <table>
             <tr>
-                <td rowspan="6" style="width: 70px;">사진</td>
+                <td id="img-td" rowspan="6" style="width: 140px;height: 182px"><img style="width: 140px;height: 182px;"
+                                                                                    src="https://raw.githubusercontent.com/superjo777/PPimg/master/KakaoTalk_20181207_043217119.jpg">
+                </td>
             </tr>
             <tr>
-                <th>이름</th>
-                <td>조세일</td>
-                <th>나이</th>
-                <td>31(만30)</td>
+                <th class="row-th">이름</th>
+                <td class="row-td">조세일</td>
+                <th class="row-th">나이</th>
+                <td class="row-td">31(만30)</td>
             </tr>
             <tr>
-                <th>영문</th>
-                <td>Jo Seil</td>
-                <th>한문</th>
-                <td>趙世一</td>
+                <th class="row-th">영문</th>
+                <td class="row-td">Jo Seil</td>
+                <th class="row-th">한문</th>
+                <td class="row-td">趙世一</td>
             </tr>
             <tr>
-                <th>생년월일</th>
-                <td>1988.11.18</td>
-                <th>E-mail</th>
-                <td>superjo331@gmail.com</td>
+                <th class="row-th">생년월일</th>
+                <td class="row-td">1988.11.18</td>
+                <th class="row-th">E-mail</th>
+                <td class="row-td">superjo331@gmail.com</td>
             </tr>
             <tr>
-                <th>휴대폰</th>
-                <td>010-8973-7592</td>
-                <th>전화번호</th>
-                <td>010-8973-7592</td>
+                <th class="row-th">휴대폰</th>
+                <td class="row-td">010-8973-7592</td>
+                <th class="row-th">전화번호</th>
+                <td class="row-td">010-8973-7592</td>
             </tr>
             <tr>
-                <th>주소</th>
-                <td colspan="4"></td>
-            </tr>
-        </table>
-        <h3>학력 사항</h3>
-        <table>
-            <tr>
-                <th>재학시간</th>
-                <th>학교명 및 전공</th>
-                <th>성적/학점</th>
-                <th>구분</th>
+                <th class="row-th">주소</th>
+                <td class="row-td" colspan="4">인천 남동구 구월말로 24-21번길 신동우아트빌4동 B01호</td>
             </tr>
             <tr>
-                <td>2004.03~2007.02</td>
-                <td>인천남 고등학교</td>
-                <td>-</td>
-                <td>졸업</td>
+                <td class="title" colspan="5">학력 사항</td>
             </tr>
-        </table>
+            <tr>
+                <th class="col-th">재학시간</th>
+                <th class="col-th" colspan="2">학교명 및 전공</th>
+                <th class="col-th">성적/학점</th>
+                <th class="col-th col-last">구분</th>
+            </tr>
+            <tr>
+                <td class="col-td">2004.03~2007.02</td>
+                <td class="col-td" colspan="2">인천남 고등학교</td>
+                <td class="col-td">-</td>
+                <td class="col-td col-last">졸업</td>
+            </tr>
 
-        <h3>자격증</h3>
-        <table>
             <tr>
-                <th>자격증/면허증</th>
-                <th>취득일</th>
-                <th>발행처</th>
+                <td class="title" colspan="5">자격증</td>
             </tr>
             <tr>
-                <td>정보처리기능사</td>
-                <td>-</td>
-                <td>-</td>
+                <th class="col-th" colspan="2">자격증/면허증</th>
+                <th class="col-th">취득일</th>
+                <th class="col-th col-last" colspan="2">발행처</th>
             </tr>
-        </table>
+            <tr>
+                <td class="col-td" colspan="2">정보처리기능사</td>
+                <td class="col-td">2012.03</td>
+                <td class="col-td col-last" colspan="2">한국산업인력공단</td>
 
-        <h3>경력사항 및 인턴쉽</h3>
-        <table>
             <tr>
-                <th>회사(또는 기관)</th>
-                <th>기간</th>
-                <th>직무분야</th>
-                <th>활동내역</th>
+            <tr>
+                <td class="col-td" colspan="2">실용영어</td>
+                <td class="col-td">2003.12</td>
+                <td class="col-td col-last" colspan="2">한국외국어평가원</td>
+
+            <tr>
+                <td class="title" colspan="5">경력사항</td>
+            </tr>
+
+            <tr>
+                <th class="col-th" colspan="2">회사(또는 기관)</th>
+                <th class="col-th">기간</th>
+                <th class="col-th">직무분야</th>
+                <th class="col-th col-last">활동내역</th>
             </tr>
             <tr>
-                <td>AEC Technology(ACE 컴택)</td>
-                <td>2014.09~2017-09</td>
-                <td>생산직 및 A/S</td>
-                <td>제품 생산 및 A/S</td>
+                <td class="col-td" colspan="2">AEC Technology(ACE 컴택)</td>
+                <td class="col-td">2014.09~2017-09</td>
+                <td class="col-td">생산직 및 A/S</td>
+                <td class="col-td col-last">제품 생산 및 A/S</td>
             </tr>
-        </table>
 
 
-        <h3>교육/연수</h3>
-        <table>
             <tr>
-                <th>기관</th>
-                <th>기간</th>
-                <th>과정명</th>
+                <td class="title" colspan="5">교육/연수</td>
             </tr>
-            <tr>
-                <td>MBC아카데미직업전문학교</td>
-                <td>2018.06.25~2018.12.17(교육중)</td>
-                <td>Java기반의 웹프로그래머 양성과정</td>
-            </tr>
-        </table>
 
-        <h3>병역</h3>
-        <table>
             <tr>
-                <th>복무기간</th>
-                <th>군별/계급/병과</th>
-                <th>미필사유</th>
+                <th class="col-th" colspan="2">기관</th>
+                <th class="col-th">기간</th>
+                <th class="col-th col-last" colspan="2">과정명</th>
             </tr>
             <tr>
-                <td>2011.04~2013.01</td>
-                <td>육군 / 병장 / 전투공병</td>
-                <td>-</td>
+                <td class="col-td" colspan="2">MBC아카데미직업전문학교</td>
+                <td class="col-td">2018.06.25~2018.12.17(교육중)</td>
+                <td class="col-td col-last" colspan="2">Java기반의 웹프로그래머 양성과정</td>
             </tr>
-        </table>
 
-        <h3>가족사항</h3>
-        <table>
-            <tr>
-                <th>관계</th>
-                <th>성명</th>
-                <th>연령</th>
-                <th>직업</th>
-                <th>직위</th>
-            </tr>
-            <tr>
-                <td>아버지(父)</td>
-                <td>조 완준</td>
-                <td>60(만 59)</td>
-                <td>-</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>어머니(母)</td>
-                <td>박 귀순</td>
-                <td>55(만 54)</td>
-                <td>생산직</td>
-                <td>사원</td>
-            </tr>
-            <tr>
-                <td>동생(弟)</td>
-                <td>조 세진</td>
-                <td>29(만 28)</td>
-                <td>웹 프로그래머</td>
-                <td>사원</td>
-            </tr>
-        </table>
 
-        <h3>자기소개</h3>
-        <table>
             <tr>
-                <td><textarea rows="" cols="">
-		
-		</textarea></td>
+                <td class="title" colspan="5">병역</td>
+            </tr>
+
+            <tr>
+                <th class="col-th">복무기간</th>
+                <th class="col-th" colspan="2">군별/계급/병과</th>
+                <th class="col-th col-last" colspan="2">미필사유</th>
+            </tr>
+            <tr>
+                <td class="col-td">2011.04~2013.01</td>
+                <td class="col-td" colspan="2">육군 / 병장 / 전투공병</td>
+                <td class="col-td col-last" colspan="2">-</td>
+            </tr>
+
+
+            <tr>
+                <td class="title" colspan="5">가족사항</td>
+            </tr>
+
+            <tr>
+                <th class="col-th">관계</th>
+                <th class="col-th">성명</th>
+                <th class="col-th">연령</th>
+                <th class="col-th">직업</th>
+                <th class="col-th col-last">직위</th>
+            </tr>
+            <tr>
+                <td class="col-td">아버지(父)</td>
+                <td class="col-td">조 완준</td>
+                <td class="col-td">60(만 59)</td>
+                <td class="col-td">-</td>
+                <td class="col-td col-last">-</td>
+            </tr>
+            <tr>
+                <td class="col-td">어머니(母)</td>
+                <td class="col-td">박 귀순</td>
+                <td class="col-td">55(만 54)</td>
+                <td class="col-td">생산직</td>
+                <td class="col-td col-last">사원</td>
+            </tr>
+            <tr>
+                <td class="col-td">동생(弟)</td>
+                <td class="col-td">조 세진</td>
+                <td class="col-td">29(만 28)</td>
+                <td class="col-td">웹 프로그래머</td>
+                <td class="col-td col-last">사원</td>
+            </tr>
+
+            <tr>
+                <td class="title" colspan="5">자기소개</td>
+            </tr>
+
+
+            <tr>
+                <td class="profile" colspan="5">
+
+                   <span class="text-title">성장과정</span><br><br>
+                    저는 무뚝뚝하지만 이해심이 많은 아버지와 수다스럽지만 부끄러움이 많은 어머니께 자란 장남입니다.<br>
+                    어려서부터 저는 성실함과 책임감 있는 생활을 하라는 말을 많이 들었으며,<br>
+                    지금도 성실하고 책임감있는 사람이 될 수 있도록 노력중에 있습니다.<br><br>
+
+                    <span class="text-title">성격소개</span><br><br>
+                    조금 무뚝뚝하면서도 엄한 아버지와 부끄러움이 많으신 어머니의 아들로서<br>
+                    부모님의 영향을 조금 많이 받은것같습니다.<br>
+                    저의 성격은 처음엔 조금 무뚝뚝해 보일수 있습니다.<br>
+                    저는 다른사람과 빨리 친해질수는 없지만 한번 친해진다면 그누구보다 친하게 지낼수 있습니다.<br><br>
+
+                    <span class="text-title">학교생활</span><br><br>
+                    무뚝뚝한 아버지의 밑에서 자라 첫인상이 무뚝뚝해서인지 저는 학생시절 친구가 많은 편은 아니었습니다.<br>
+                    하지만 친구가 별로없는 생활은 오래가지않고 한두번 이야기해본 친구들은<br>
+                    제가 수다를 좋아하고 재미있는 친구라는걸 알고는 허물없이 지내게 되었습니다.<br>
+                    학업태도는 불성실하지않았지만 그렇다고 좋지는 않았습니다.<br>
+                    수업시간에 딴짓을 하는건 아니었지만 공부라는생각에 집중이 오래가질 못하였습니다.<br><br>
+
+                    <span class="text-title">취미 및 특기</span><br><br>
+                    저는 TV애니메이션이라던가 극장 애니메이션에 관심이 많습니다.<br>
+                    왜 애니메이션이나면 드라마나 일반 영화는 실제사람이 움직이는데에 반해<br>
+                    애니메이션은 그림 한장한장을 미묘하게 엇나가게 그려서 사람처럼 움직이는 그게 왠지 신기해서입니다.<br>
+                    특기라고 할것까진 아니지만 저는 애니메이션에서 나오는 일본어는 왠만하면 듣고 해석이 가능합니다.<br>
+                    단점은 일본어를 읽을수 있는것이 아니라서 일본어 자격증이라던가 하는것이 없는것입니다.<br><br>
+
+                    <span class="text-title">프로그램 개발자가 되기로 한 이유</span><br><br>
+                    처음엔 대단한 이유같은 건 없었습니다.<br>
+                    단순히 어려서부터 컴퓨터를 다뤘고 컴퓨터에 관하여 문제가 생기면 그 문제를 해결하기 위하여<br>
+                    조사해보고 어떻게든 해결했기에 그나마 다룰줄 아는건 컴퓨터뿐이었기 때문입니다.<br>
+                    하지만 이번에 컴퓨터 언어에 대해 배우고 프로그래밍의 기초를 배우면서 점점 프로그래머가 매력적이라는걸 느꼇습니다.<br>
+                    아무것도 아닌 기초적인 코딩을 하더라도 머릿속에서 `"이게 될까?" 하고 생각하는것들을<br>
+                    하나하나 적고 실패하고 다시 적고 시행착오를 하면서 코드들을 하나 둘 수정해나가면서 <br>
+                    완성되었을때 정말로 보람을 느꼇고 프로그램 개발자가 되어야겠다고 결심하였습니다.<br>
+                </td>
             </tr>
         </table>
     </div>
