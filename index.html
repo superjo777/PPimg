@@ -64,6 +64,10 @@
             font-weight: bold;
             font-size: 18px;
         }
+        .curriculum{
+        border: 1px solid #000;
+        border-bottom: none;
+        }
 
         .img {
             display: none;
@@ -78,6 +82,9 @@
         .codeOnly {
             width: 1000px;
             display: none;
+        }
+        .btn{
+        width: 150px;
         }
     </style>
     <script type="text/javascript">
@@ -103,6 +110,10 @@
 <body>
 <div>
     <div style="width: 1000px; margin: 0 auto;">
+    <h3>프로젝트 쇼핑몰</h3>
+    <div>개발 기간  : 2018.10.23~현재</div>
+    <div>프로젝트 인원 : 1명</div>
+    <div>프로젝트 폴더 구조</div>
 <pre>
 └─WebContent			
     ├─Include -----------------------//page에서 공통으로 사용하는 파일들이 있는 폴더입니다
@@ -138,6 +149,7 @@
              ├─css
              └─Member_Insert
 </pre>
+		<div>프로젝트 일부 소스</div><br>
         <div>
             <button class="btn" onclick="add('1')">인덱스</button>
             <button class="code-btn" style="margin-left: 10px;" onclick="codeshow('1')">코드보기</button>
@@ -264,6 +276,13 @@
                  alt="https://raw.githubusercontent.com/superjo777/PPimg/master/categoryDelCode.jpg"><br>
 
         </div>
+        <div>프로젝트를 하며 느낀점</div>
+        <div>
+        	일단 이제막 시작한 새내기 프로그래머 1명이 프로젝트를 한다는건 너무나 힘들다 생각합니다.<br>
+        	mvc패턴이 아직 익숙칠 못하여 오로지 jsp하나만 가지고 작업을 하였는데 테스트를하다<br>
+        	오류가 하나 발생하게 되면 유지보수가 정말 큰 일로 다가오는것을 보고 더욱 정진해서<br>
+        	프론트 엔드와 백 엔드를 나누고 분업을 할 수 있도록 더욱 노력해야겠다고 느낍니다.<br> 
+        </div>
         
         <h3>인적 사항</h3>
         <table>
@@ -367,7 +386,123 @@
                 <td class="col-td">2018.06.25~2018.12.17(교육중)</td>
                 <td class="col-td col-last" colspan="2">Java기반의 웹프로그래머 양성과정</td>
             </tr>
+			<tr>
+                <td class="title" colspan="5">Curriculum</td>
+            </tr>
 
+            <tr>
+            	<td class="curriculum" colspan="5">NCS 소양교과(직업기초능력) : 24시간</td>
+            </tr>
+            <tr>
+                <th class="col-th" colspan="2">단원명</th>
+                <th class="col-th" colspan="2">학습내용</th>
+                <th class="col-th col-last">훈련시간</th>
+            </tr>
+            <tr>
+                <td class="col-td" colspan="2">정보능력</td>
+                <td class="col-td" colspan="2">정보능력, 컴퓨터확용능력, 정보처리능력</td>
+                <td class="col-td col-last">24시간</td>
+            </tr>
+            <tr>
+            	<td class="curriculum" colspan="5" style="border-top: none;">NCS 전공교과 : 672시간</td>
+            </tr>
+            <tr>
+                <th class="col-th" colspan="2">교과목명</th>
+                <th class="col-th" colspan="2">능력단위명</th>
+                <th class="col-th col-last">훈련시간</th>
+            </tr>
+            <tr>
+                <td class="col-td" colspan="2">응용SW 기초기술</td>
+                <td class="col-td" colspan="2">응용 SW 기초 기술 활용</td>
+                <td class="col-td col-last">48시간</td>
+            </tr>
+            <tr>
+                <td class="col-td" colspan="2" rowspan="3">프로그래밍 기본</td>
+                <td class="col-td" colspan="2">프로그래밍 언어 활용</td>
+                <td class="col-td col-last">120시간</td>
+            </tr>
+            <tr>
+                
+                <td class="col-td" colspan="2">에플리케이션 테스트 수행</td>
+                <td class="col-td col-last">32시간</td>
+            </tr>
+            <tr>
+                
+                <td class="col-td" colspan="2">애플리케이션 배포</td>
+                <td class="col-td col-last">24시간</td>
+            </tr>
+            <tr>
+                <td class="col-td" colspan="2" rowspan="3">서버프로그래밍</td>
+                <td class="col-td" colspan="2">데이터 입출력 구현</td>
+                <td class="col-td col-last">56시간</td>
+            </tr>
+            <tr>
+                
+                <td class="col-td" colspan="2">서버프로그램 구현</td>
+                <td class="col-td col-last">56시간</td>
+            </tr>
+            <tr>
+                
+                <td class="col-td" colspan="2">인터페이스 구현</td>
+                <td class="col-td col-last">48시간</td>
+            </tr>
+            <tr>
+                <td class="col-td" colspan="2" rowspan="3">웹프로그래밍 구현</td>
+                <td class="col-td" colspan="2">화면구현</td>
+                <td class="col-td col-last">72시간</td>
+            </tr>
+            <tr>
+                
+                <td class="col-td" colspan="2">화면설계</td>
+                <td class="col-td col-last">56시간</td>
+            </tr>
+            <tr>
+                
+                <td class="col-td" colspan="2">통합구현</td>
+                <td class="col-td col-last">48시간</td>
+            </tr>
+            <tr>
+                <td class="col-td" colspan="2">네트워크 프로그래밍</td>
+                <td class="col-td" colspan="2">네트워크 프로그래밍 구현</td>
+                <td class="col-td col-last">48시간</td>
+            </tr>
+             <tr>
+                <td class="col-td" colspan="2" rowspan="2">DB프로그래밍</td>
+                <td class="col-td" colspan="2">SQL활용</td>
+                <td class="col-td col-last">32시간</td>
+            </tr>
+            <tr>
+                
+                <td class="col-td" colspan="2">데이터베이스 구현</td>
+                <td class="col-td col-last">32시간</td>
+            </tr>
+             <tr>
+            	<td class="curriculum" colspan="5" style="border-bottom: 1px #000 solid; border-top: none;">비 NCS 전공교과 : 264시간</td>
+            </tr>
+             <tr>
+                <td class="col-td" colspan="2" rowspan="2">웹표준 프로그래밍</td>
+                <td class="col-td" colspan="2">HTML5+CSS3</td>
+                <td class="col-td col-last">72시간</td>
+            </tr>
+            <tr>
+                
+                <td class="col-td" colspan="2">javaScipt+jQuery</td>
+                <td class="col-td col-last">75시간</td>
+            </tr>
+            <tr>                
+                <td class="col-td" colspan="2" rowspan="3">서블릿 프로그래밍</td>
+                <td class="col-td" colspan="2">SQL활용</td>
+                <td class="col-td col-last">40시간</td>
+            </tr>
+             <tr>
+                <td class="col-td" colspan="2">JSP프로그래밍 I</td>                
+                <td class="col-td col-last">40시간</td>
+            </tr>
+            <tr>
+                
+                <td class="col-td" colspan="2">JSP프로그래밍 II</td>
+                <td class="col-td col-last">40시간</td>
+            </tr>
 
             <tr>
                 <td class="title" colspan="5">병역</td>
